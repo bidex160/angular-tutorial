@@ -11,9 +11,7 @@ export class Passenger {
 }
 
 
-export class Child {
-
-    constructor(
-        public   name:string,
-        public      age:number){}
+interface  Child {
+           name:string,
+              age:number
 }

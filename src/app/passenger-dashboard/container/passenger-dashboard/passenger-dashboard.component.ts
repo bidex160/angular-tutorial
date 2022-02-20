@@ -24,6 +24,9 @@ import { Passenger } from "src/model/passenger";
    <div class="date">
      check in date : {{pass.checkedInDate ? (pass.checkedInDate | date:'MMM d, y') : "Not checked in"}}
    </div>
+   <div class="children">
+    Children : {{pass.children?.length || 0}}
+ </div>
    </li>
     
     </ul>
@@ -40,7 +43,7 @@ export class PassengerDashboardComponent {
     new Passenger('3','Testing 3', true, 1470742000000, [{'name':'name','age':24},{'name':'name','age':24}]),
     new Passenger('4','Testing 4', false, 1390742000000, [{'name':'name','age':24},{'name':'name','age':24}]),
     new Passenger('5','Testing 5', false, 2490742000000, []),
-    new Passenger('6','Testing 6', true, null, []),
+    new Passenger('6','Testing 6', true, null, null),
     new Passenger('7','Testing 7', false, null, [{'name':'name','age':24},{'name':'name','age':24}])];
 
 
